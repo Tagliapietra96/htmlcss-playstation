@@ -39,10 +39,6 @@
 
 /* ************************************************************************ */
 
-*{
-    transition: all .5s;
-}
-
 /* Header */
 header{
     position: sticky;
@@ -98,6 +94,32 @@ section.my-bg-banner{
 section.my-gallery div.rounded-4:hover{
     border-color: var(--bs-primary) !important;
 }
+
+/* articoli ps-5 */
+.barra-inferiore{
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    height: 3px;
+    width: 0;
+    transition: all .5s;
+    background-color: var(--bs-primary);
+}
+
+section.my-ps5-articles .position-relative:hover .barra-inferiore{
+    left: 5%;
+    width: 90%;
+}
+
+section.my-ps5-articles .position-relative:hover .text-center{
+    font-weight: bold;
+}
+
+section.my-ps5-articles small{
+    font-size: 10px;
+    vertical-align: text-top;
+}
+
 
 /* ************************************************************************ */
 
