@@ -138,3 +138,32 @@ section.my-ps5-articles small{
 /* ************************************************************************ */
 /*                             Media Query                                  */
 /* ************************************************************************ */
+
+@media screen and (max-width: 991px) {
+    header input + div{
+        top: -500%;
+        transition: top .5s;
+        opacity: 0;
+        position: absolute;
+        z-index: -1;
+    }
+
+    header input:checked + div{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: white;
+        border-top: 1px solid var(--bs-secondary);
+        padding: 1rem .75rem 1rem 0;
+        opacity: 1;
+    }
+
+    header input:checked + div ul:first-child{
+        flex-direction: column;
+    }
+
+    header input:checked + div ul:last-child{
+        align-items: flex-start;
+    }
+}
