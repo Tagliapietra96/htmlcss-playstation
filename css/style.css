@@ -72,9 +72,23 @@ header li:hover a{
 /* ************************************************************************ */
 
 /* Main */
-main{
-    margin-top: 75px;
+section.my-bg-banner{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+
+/* Jumbotron */
+.my-jumbotron{
+    padding-top: 15rem;
+    background-image: url(../img/jumbo-bg.png);
+}
+
+.my-jumbotron [src*=returnal]{
+    width: 60%;
+    display: block;
+}
+/* ------------------------------------- */
 
 /* ************************************************************************ */
 
