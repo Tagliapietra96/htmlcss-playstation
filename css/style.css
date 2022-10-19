@@ -45,6 +45,7 @@ header{
     top: -25px;
     right: 0;
     left: 0;
+    z-index: 2000;
 }
 
 header [src*=sony]{
@@ -93,6 +94,10 @@ section.my-bg-banner{
 /* gallery */
 section.my-gallery div.rounded-4:hover{
     border-color: var(--bs-primary) !important;
+}
+
+section.my-gallery div.rounded-4{
+    transition: all .5s;
 }
 
 /* articoli ps-5 */
