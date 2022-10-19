@@ -39,6 +39,10 @@
 
 /* ************************************************************************ */
 
+*{
+    transition: all .5s;
+}
+
 /* Header */
 header{
     position: sticky;
@@ -89,6 +93,11 @@ section.my-bg-banner{
     display: block;
 }
 /* ------------------------------------- */
+
+/* gallery */
+section.my-gallery div.rounded-4:hover{
+    border-color: var(--bs-primary) !important;
+}
 
 /* ************************************************************************ */
 
