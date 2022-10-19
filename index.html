@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
@@ -14,13 +15,88 @@
 
         <!-- Top bar with sony logo -->
         <div class="container-fluid bg-black">
-            <img src="img/sony_logo.svg" alt="" class="w-20 ms-auto ">
+            <img src="img/sony_logo.svg" alt="" class="d-block ms-auto py-1 ">
         </div>
 
         <!-- navbar menu -->
         <div class="container-fluid bg-white">
-            <nav class="d-flex justify-content-between">
+            <nav class="d-flex justify-content-between align-items-center">
+                <!-- logo -->
+                <div>
+                    <img src="img/play_logo.svg" alt="" class="img-fluid">
+                </div>
 
+                    <!-- hamburger -->
+                    <button class="btn btn-outline-secondary d-lg-none"><i class="fa-solid fa-bars"></i></button>
+
+                    <!-- menu -->
+                    <div class="d-none d-lg-flex justify-content-between flex-grow-1">
+
+                        <!-- menu left -->
+                        <ul class="nav">
+                            <li class="nav-item d-flex align-items-center">
+                                <a href="#" class="nav-link text-decoration-none text-secondary">Giochi</a>
+                                <div class="my-chevron">
+                                    <img src="img/chevron-down-solid.svg" alt="">
+                                    <img src="img/chevron-down-solid-hover.svg" alt="" class="d-none">
+                                </div>
+                            </li>
+                            <li class="nav-item d-flex align-items-center">
+                                <a href="#" class="nav-link text-decoration-none text-secondary">Hardware</a>
+                                <div class="my-chevron">
+                                    <img src="img/chevron-down-solid.svg" alt="">
+                                    <img src="img/chevron-down-solid-hover.svg" alt="" class="d-none">
+                                </div>
+                            </li>
+                            <li class="nav-item d-flex align-items-center">
+                                <a href="#" class="nav-link text-decoration-none text-secondary">Servizi</a>
+                                <div class="my-chevron">
+                                    <img src="img/chevron-down-solid.svg" alt="">
+                                    <img src="img/chevron-down-solid-hover.svg" alt="" class="d-none">
+                                </div>
+                            </li>
+                            <li class="nav-item d-flex align-items-center">
+                                <a href="#" class="nav-link text-decoration-none text-secondary">Novità</a>
+                                <div class="my-chevron">
+                                    <img src="img/chevron-down-solid.svg" alt="">
+                                    <img src="img/chevron-down-solid-hover.svg" alt="" class="d-none">
+                                </div>
+                            </li>
+                            <li class="nav-item d-flex align-items-center">
+                                <a href="#" class="nav-link text-decoration-none text-secondary">Fai acquisti</a>
+                                <div class="my-chevron">
+                                    <img src="img/chevron-down-solid.svg" alt="">
+                                    <img src="img/chevron-down-solid-hover.svg" alt="" class="d-none">
+                                </div>
+                            </li>
+                            <li class="nav-item d-flex align-items-center">
+                                <a href="#" class="nav-link text-decoration-none text-secondary">Supporto</a>
+                                <div class="my-chevron">
+                                    <img src="img/chevron-down-solid.svg" alt="">
+                                    <img src="img/chevron-down-solid-hover.svg" alt="" class="d-none">
+                                </div>
+                            </li>
+                        </ul>
+
+                        <!-- menuright -->
+                        <ul class="nav">
+                            <li class="nav-item d-flex align-items-center">
+                                <a href="#" class="nav-link text-decoration-none text-secondary">Playstation</a>
+                                <div class="my-chevron">
+                                    <img src="img/chevron-down-solid.svg" alt="">
+                                    <img src="img/chevron-down-solid-hover.svg" alt="" class="d-none">
+                                </div>
+                            </li>
+                            <li class="nav-item mx-3">
+                                <button class="btn btn-dark rounded-pill">Accedi</button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="btn px-0 ">
+                                    <img src="img/lens.svg" alt="" class="w-50">
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
             </nav>
         </div>
 

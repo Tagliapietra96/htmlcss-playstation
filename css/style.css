@@ -41,15 +41,40 @@
 
 /* Header */
 header{
-    position: fixed;
-    top: 0;
+    position: sticky;
+    top: -25px;
     right: 0;
     left: 0;
 }
 
+header [src*=sony]{
+    height: 25px;
+}
+
+.my-chevron{
+    width: 10px;
+    margin-right: 3px;
+}
+
+header li:hover .my-chevron img{
+    display: none;
+}
+
+header li:hover .my-chevron img.d-none{
+    display: inline-block !important;
+}
+
+header li:hover a{
+    color: var(--bs-primary) !important;
+}
+
+
 /* ************************************************************************ */
 
 /* Main */
+main{
+    margin-top: 75px;
+}
 
 /* ************************************************************************ */
 
