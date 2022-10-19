@@ -84,7 +84,7 @@ section.my-bg-banner{
     background-image: url(../img/jumbo-bg.png);
 }
 
-.my-jumbotron [src*=returnal]{
+.my-bg-banner img{
     width: 60%;
     display: block;
 }
@@ -120,6 +120,11 @@ section.my-ps5-articles small{
     vertical-align: text-top;
 }
 
+
+/* it takes two */
+.my-takes-two{
+    background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
+}
 
 /* ************************************************************************ */
 
