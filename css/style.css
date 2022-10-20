@@ -125,6 +125,12 @@ section small{
     color: var(--bs-primary) !important;
     background-color: var(--bs-gray-100) !important;
 }
+/* ------------------------------------- */
+
+/* PS Now */
+.my-bg-primary-dark{
+    background-color: #161b3b;
+}
 
 /* ************************************************************************ */
 
