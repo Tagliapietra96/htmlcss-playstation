@@ -244,3 +244,9 @@ footer a:hover{
         align-items: flex-end;
     }
 }
+
+@media screen and (min-width: 1400px){
+    .my-jumbotron{
+        padding-top: 25rem;
+    }
+}
