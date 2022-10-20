@@ -16,14 +16,6 @@ header [src*=sony]{
     margin-right: 3px;
 }
 
-header li{
-    transition: transform .5s;
-}
-
-header li:hover{
-    transform: scale(1.1);
-}
-
 header li:hover .my-chevron img{
     display: none;
 }
@@ -32,7 +24,35 @@ header li:hover .my-chevron img.d-none{
     display: inline-block !important;
 }
 
-header li:hover a{
+header li:hover a:not(li .my-dropdown a){
+    color: var(--bs-primary) !important;
+}
+
+header .my-dropdown{
+    position: absolute;
+    top: -500%;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border-top: 1px solid var(--bs-secondary);
+    padding: 1rem;
+    transition: top .7s, ease-in opacity 1s;
+
+    z-index: -1;
+    opacity: 0;
+}
+
+header input:checked + .my-dropdown{
+    top: 100%;
+    opacity: 1;
+}
+
+header .my-dropdown a{
+    transition: transform .5s, color .3s;
+}
+
+header .my-dropdown a:hover{
+    transform: scale(1.1);
     color: var(--bs-primary) !important;
 }
 
@@ -104,6 +124,17 @@ section small{
 }
 /* ------------------------------------- */
 
+/* nuove uscite */
+
+.my-new-games .col:hover img{
+    transition: border-color .7s;
+}
+
+.my-new-games .col:hover img{
+    border-color: white !important;
+}
+/* ------------------------------------- */
+
 /* articoli ps4 */
 .my-ps4-articles small{
     font-size: 1rem;
@@ -127,6 +158,16 @@ section small{
 }
 /* ------------------------------------- */
 
+/* discount */
+.my-discount img{
+    transition: border-radius .5s;
+}
+
+.my-discount img:hover{
+    border-radius: 50%;
+}
+/* ------------------------------------- */
+
 /* PS Now */
 .my-bg-primary-dark{
     background-color: #161b3b;
@@ -135,11 +176,12 @@ section small{
 
 /* social */
 .my-social img{
-    transition: transform .5s;
+    transition: transform .5s, box-shadow .3s;
 }
 
 .my-social img:hover{
     transform: scale(1.1) ;
+    box-shadow: 3px 3px 10px lightgray;
 }
 
 .my-social a:active img{
