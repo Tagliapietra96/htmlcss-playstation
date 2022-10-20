@@ -1,6 +1,3 @@
-
-/* ************************************************************************ */
-
 /* Header */
 header{
     position: sticky;
@@ -55,7 +52,8 @@ section.my-bg-banner{
     background-image: url(../img/jumbo-bg.png);
 }
 
-.my-bg-banner img{
+.my-bg-banner img,
+.my-banner img{
     width: 60%;
     display: block;
 }
@@ -69,6 +67,7 @@ section.my-gallery div.rounded-4:hover{
 section.my-gallery div.rounded-4{
     transition: all .5s;
 }
+/* ------------------------------------- */
 
 /* articoli ps-5 */
 .barra-inferiore{
@@ -85,6 +84,9 @@ section.my-ps5-articles .position-relative:hover .barra-inferiore{
     left: 5%;
     width: 90%;
 }
+section.my-ps5-articles .position-relative .text-center{
+    transition: font-weight .3s;
+}
 
 section.my-ps5-articles .position-relative:hover .text-center{
     font-weight: bold;
@@ -94,18 +96,35 @@ section small{
     font-size: 8px;
     vertical-align: text-top;
 }
-
+/* ------------------------------------- */
 
 /* it takes two */
 .my-takes-two{
     background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
 }
+/* ------------------------------------- */
 
 /* articoli ps4 */
 .my-ps4-articles small{
     font-size: 1rem;
 }
+/* ------------------------------------- */
 
+/* Play station plus */
+.my-btn{
+    background-color: var(--bs-gray-300);
+    color: var(--bs-primary)
+}
+
+.my-btn:hover{
+    color: var(--bs-primary);
+    background-color: var(--bs-gray-200);
+}
+
+.my-btn:active{
+    color: var(--bs-primary) !important;
+    background-color: var(--bs-gray-100) !important;
+}
 
 /* ************************************************************************ */
 
