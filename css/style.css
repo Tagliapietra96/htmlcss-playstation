@@ -131,6 +131,20 @@ section small{
 .my-bg-primary-dark{
     background-color: #161b3b;
 }
+/* ------------------------------------- */
+
+/* social */
+.my-social img{
+    transition: transform .5s;
+}
+
+.my-social img:hover{
+    transform: scale(1.1) ;
+}
+
+.my-social a:active img{
+    transform: scale(.9);
+}
 
 /* ************************************************************************ */
 
@@ -143,6 +157,10 @@ section small{
 footer a,
 footer p{
     font-size: .7rem;
+}
+
+footer a:hover{
+    text-decoration: underline !important;
 }
 /* ************************************************************************ */
 /*                             Media Query                                  */
