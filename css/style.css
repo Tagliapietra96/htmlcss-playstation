@@ -19,6 +19,14 @@ header [src*=sony]{
     margin-right: 3px;
 }
 
+header li{
+    transition: transform .5s;
+}
+
+header li:hover{
+    transform: scale(1.1);
+}
+
 header li:hover .my-chevron img{
     display: none;
 }
