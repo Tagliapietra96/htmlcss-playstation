@@ -208,6 +208,10 @@ section small{
     vertical-align: text-top;
 }
 
+.my-ps5-articles .position-absolute{
+    transition: opacity .5s;
+}
+
 #psc-1:checked ~ section .psc-1{
     opacity: 1 !important;
 }
