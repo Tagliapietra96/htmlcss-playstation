@@ -93,6 +93,11 @@ section small{
     background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
 }
 
+/* articoli ps4 */
+.my-ps4-articles small{
+    font-size: 1rem;
+}
+
 
 /* ************************************************************************ */
 
@@ -128,5 +133,13 @@ section small{
 
     header input:checked + div ul:last-child{
         align-items: flex-start;
+    }
+}
+
+@media screen and (max-width: 422px){
+    header input:checked + div ul:last-child{
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-end;
     }
 }
