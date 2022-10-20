@@ -1,0 +1,347 @@
+/* Header */
+header{
+    position: sticky;
+    top: -25px;
+    right: 0;
+    left: 0;
+    z-index: 2000;
+}
+
+header [src*=sony]{
+    height: 25px;
+}
+
+.my-chevron{
+    width: 10px;
+    margin-right: 3px;
+}
+
+header li:hover .my-chevron img{
+    display: none;
+}
+
+header li:hover .my-chevron img.d-none{
+    display: inline-block !important;
+}
+
+header li:hover a:not(li .my-dropdown a){
+    color: var(--bs-primary) !important;
+}
+
+header .my-dropdown{
+    position: absolute;
+    top: -500%;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border-top: 1px solid var(--bs-secondary);
+    padding: 1rem;
+    transition: top .7s, ease-in opacity 1s;
+    z-index: -1;
+    opacity: 0;
+}
+
+header input:checked + .my-dropdown{
+    top: 100%;
+    opacity: 1;
+}
+
+header .my-dropdown a{
+    transition: transform .5s, color .3s;
+}
+
+header .my-dropdown a:hover{
+    transform: scale(1.1);
+    color: var(--bs-primary) !important;
+}
+
+
+
+/* ************************************************************************ */
+
+/* Main */
+.my-bg-banner{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Jumbotron */
+.my-jumbotron{
+    padding-top: 15rem;
+}
+
+.my-bg-banner img,
+.my-banner img{
+    width: 60%;
+    display: block;
+}
+
+.my-jumbotron div.position-absolute{
+    padding-top: 15rem;
+}
+
+.my-jumbotron .j-1,
+.my-jumbotron .j-3,
+.my-jumbotron .j-5{
+    background-image: url(../img/jumbo-bg.png);
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+.my-jumbotron .j-2,
+.my-jumbotron .j-4,
+.my-jumbotron .j-6{
+    background-image: url(../img/ratchet-and-clank-rift-apart-keyart.jpg);
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+#j-1:checked ~ section .j-1{
+    opacity: 1;
+}
+
+#j-1:checked ~ section .j-1 .row{
+    opacity: 1 !important;
+}
+
+#j-1:checked ~ .my-gallery [for=j-1]{
+    border-color: var(--bs-primary) !important;
+}
+
+#j-2:checked ~ section .j-2{
+    opacity: 1;
+}
+
+#j-2:checked ~ section .j-2 .row{
+    opacity: 1 !important;
+}
+
+#j-2:checked ~ .my-gallery [for=j-2]{
+    border-color: var(--bs-primary) !important;
+}
+
+#j-3:checked ~ section .j-3{
+    opacity: 1;
+}
+
+#j-3:checked ~ section .j-3 .row{
+    opacity: 1 !important;
+}
+
+#j-3:checked ~ .my-gallery [for=j-3]{
+    border-color: var(--bs-primary) !important;
+}
+
+#j-4:checked ~ section .j-4{
+    opacity: 1;
+}
+
+#j-4:checked ~ section .j-4 .row{
+    opacity: 1 !important;
+}
+
+#j-4:checked ~ .my-gallery [for=j-4]{
+    border-color: var(--bs-primary) !important;
+}
+
+#j-5:checked ~ section .j-5{
+    opacity: 1;
+}
+
+#j-5:checked ~ section .j-5 .row{
+    opacity: 1 !important;
+}
+
+#j-5:checked ~ .my-gallery [for=j-5]{
+    border-color: var(--bs-primary) !important;
+}
+
+#j-6:checked ~ section .j-6{
+    opacity: 1;
+}
+
+#j-6:checked ~ section .j-6 .row{
+    opacity: 1 !important;
+}
+
+#j-6:checked ~ .my-gallery [for=j-6]{
+    border-color: var(--bs-primary) !important;
+}
+/* ------------------------------------- */
+
+/* gallery */
+section.my-gallery label.rounded-4:hover{
+    border-color: var(--bs-primary) !important;
+}
+
+section.my-gallery label.rounded-4{
+    transition: all .5s;
+}
+/* ------------------------------------- */
+
+/* articoli ps-5 */
+.barra-inferiore{
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    height: 3px;
+    width: 0;
+    transition: all .5s;
+    background-color: var(--bs-primary);
+}
+
+section.my-ps5-articles .position-relative:hover .barra-inferiore{
+    left: 5%;
+    width: 90%;
+}
+section.my-ps5-articles .position-relative .text-center{
+    transition: font-weight .3s;
+}
+
+section.my-ps5-articles .position-relative:hover .text-center{
+    font-weight: bold;
+}
+
+section small{
+    font-size: 8px;
+    vertical-align: text-top;
+}
+/* ------------------------------------- */
+
+/* it takes two */
+.my-takes-two{
+    background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
+}
+/* ------------------------------------- */
+
+/* nuove uscite */
+
+.my-new-games .col:hover img{
+    transition: border-color .7s;
+}
+
+.my-new-games .col:hover img{
+    border-color: white !important;
+}
+/* ------------------------------------- */
+
+/* articoli ps4 */
+.my-ps4-articles small{
+    font-size: 1rem;
+}
+/* ------------------------------------- */
+
+/* Play station plus */
+.my-btn{
+    background-color: var(--bs-gray-300);
+    color: var(--bs-primary)
+}
+
+.my-btn:hover{
+    color: var(--bs-primary);
+    background-color: var(--bs-gray-200);
+}
+
+.my-btn:active{
+    color: var(--bs-primary) !important;
+    background-color: var(--bs-gray-100) !important;
+}
+/* ------------------------------------- */
+
+/* discount */
+.my-discount img{
+    transition: border-radius .5s;
+}
+
+.my-discount img:hover{
+    border-radius: 50%;
+}
+/* ------------------------------------- */
+
+/* PS Now */
+.my-bg-primary-dark{
+    background-color: #161b3b;
+}
+/* ------------------------------------- */
+
+/* social */
+.my-social img{
+    transition: transform .5s, box-shadow .3s;
+}
+
+.my-social img:hover{
+    transform: scale(1.1) ;
+    box-shadow: 3px 3px 10px lightgray;
+}
+
+.my-social a:active img{
+    transform: scale(.9);
+}
+
+/* ************************************************************************ */
+
+/* Footer */
+#lenguage{
+    width: 15px;
+    margin-right: 5px;
+}
+
+footer a,
+footer p{
+    font-size: .7rem;
+}
+
+footer a:hover{
+    text-decoration: underline !important;
+}
+/* ************************************************************************ */
+/*                             Media Query                                  */
+/* ************************************************************************ */
+
+@media screen and (max-width: 991px) {
+    header input + div{
+        top: -500%;
+        transition: top .5s;
+        opacity: 0;
+        position: absolute;
+        z-index: -1;
+    }
+
+    header input:checked + div{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: white;
+        border-top: 1px solid var(--bs-secondary);
+        padding: 1rem .75rem 1rem 0;
+        opacity: 1;
+    }
+
+    header input:checked + div ul:first-child{
+        flex-direction: column;
+    }
+
+    header input:checked + div ul:last-child{
+        align-items: flex-start;
+    }
+}
+
+@media screen and (max-width: 422px){
+    header input:checked + div ul:last-child{
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-end;
+    }
+}
+
+@media screen and (min-width: 1400px){
+    .my-jumbotron{
+        padding-top: 25rem;
+    }
+
+    .my-jumbotron div.position-absolute{
+        padding-top: 25rem;
+    }
+}
