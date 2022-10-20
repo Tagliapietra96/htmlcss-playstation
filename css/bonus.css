@@ -207,6 +207,71 @@ section small{
     font-size: 8px;
     vertical-align: text-top;
 }
+
+#psc-1:checked ~ section .psc-1{
+    opacity: 1 !important;
+}
+
+#psc-1:checked ~ section [for=psc-1]{
+    font-weight: bold;
+}
+
+#psc-1:checked ~ section [for=psc-1] .barra-inferiore{
+    left: 5%;
+    width: 90%;
+}
+
+#psc-2:checked ~ section .psc-2{
+    opacity: 1 !important;
+}
+
+#psc-2:checked ~ section [for=psc-2]{
+    font-weight: bold;
+}
+
+#psc-2:checked ~ section [for=psc-2] .barra-inferiore{
+    left: 5%;
+    width: 90%;
+}
+
+#psc-3:checked ~ section .psc-3{
+    opacity: 1 !important;
+}
+
+#psc-3:checked ~ section [for=psc-3]{
+    font-weight: bold;
+}
+
+#psc-3:checked ~ section [for=psc-3] .barra-inferiore{
+    left: 5%;
+    width: 90%;
+}
+
+#psc-4:checked ~ section .psc-4{
+    opacity: 1 !important;
+}
+
+#psc-4:checked ~ section [for=psc-4]{
+    font-weight: bold;
+}
+
+#psc-4:checked ~ section [for=psc-4] .barra-inferiore{
+    left: 5%;
+    width: 90%;
+}
+
+#psc-5:checked ~ section .psc-5{
+    opacity: 1 !important;
+}
+
+#psc-5:checked ~ section [for=psc-5]{
+    font-weight: bold;
+}
+
+#psc-5:checked ~ section [for=psc-5] .barra-inferiore{
+    left: 5%;
+    width: 90%;
+}
 /* ------------------------------------- */
 
 /* it takes two */

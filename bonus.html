@@ -346,7 +346,7 @@
         <input type="radio" name="jumbo" id="j-5" class="d-none">
         <input type="radio" name="jumbo" id="j-6" class="d-none">
         <!-- jumbotron -->
-        <section class="my-jumbotron pb-5 text-white position-relative">
+        <section class="my-jumbotron pb-5 text-white position-relative overflow-hidden">
             
             
             <div class="j-1 position-absolute top-0 start-0 end-0 bottom-0 my-bg-banner ">
@@ -507,7 +507,11 @@
         </section>
 
         <!-- -------------------------------------------------------- -->
-
+        <input type="radio" name="ps5" id="psc-1" class="d-none" checked>
+        <input type="radio" name="ps5" id="psc-2" class="d-none" >
+        <input type="radio" name="ps5" id="psc-3" class="d-none" >
+        <input type="radio" name="ps5" id="psc-4" class="d-none" >
+        <input type="radio" name="ps5" id="psc-5" class="d-none" >
         <!-- articoli ps5 -->
         <section class="py-5 my-ps5-articles">
             <div class="container">
@@ -530,53 +534,69 @@
                         </div>
                     </div>
 
-                    <div class="col-md-7">
-                        <img src="img/playstation-5-thumb.png" alt="" class="img-fluid">
-                    </div>
+                    <div class="col-md-7 position-relative">
+                        <img src="img/playstation-5-thumb.png" alt="" class="img-fluid opacity-0">
+                        <div class="position-absolute top-0 bottom-0 start-0 end-0 opacity-0 psc-1">
+                            <img src="img/playstation-5-thumb.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="position-absolute top-0 bottom-0 start-0 end-0 opacity-0 psc-2">
+                            <img src="img/joypad-thumb.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="position-absolute top-0 bottom-0 start-0 end-0 opacity-0 psc-3">
+                            <img src="img/headset-thumb.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="position-absolute top-0 bottom-0 start-0 end-0 opacity-0 psc-4">
+                            <img src="img/remote-thumb.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="position-absolute top-0 bottom-0 start-0 end-0 opacity-0 psc-5">
+                            <img src="img/camera-thumb.jpg" alt="" class="img-fluid">
+                        </div>
+
+                        </div>
 
                     <div class="col">
 
                         <div class="row row-cols-3 row-cols-md-5 gy-3">
 
-                            <div class="col position-relative">
+                            <label for="psc-1" class="col position-relative">
                                 <img src="img/playstation-5-thumb.png" alt="" class="img-fluid">
                                 <div class="text-center d-none d-md-block mt-2">
                                     Console PS5
                                 </div>
                                 <div class="barra-inferiore"></div>
-                            </div>
+                            </label>
                             
-                            <div class="col position-relative">
+                            <label for="psc-2" class="col position-relative">
                                 <img src="img/joypad-thumb.png" alt="" class="img-fluid">
                                 <div class="text-center d-none d-md-block mt-2">
                                     Controller wireless DualSens<small><i class="fa-solid fa-trademark"></i></small>
                                 </div>
                                 <div class="barra-inferiore"></div>
-                            </div>
+                            </label>
 
-                            <div class="col position-relative">
+                            <label for="psc-3" class="col position-relative">
                                 <img src="img/headset-thumb.png" alt="" class="img-fluid">
                                 <div class="text-center d-none d-md-block mt-2">
                                     Cuffie wireless con microfono PULSE 3<small><i class="fa-solid fa-trademark"></i></small>
                                 </div>
                                 <div class="barra-inferiore"></div>
-                            </div>
+                            </label>
 
-                            <div class="col position-relative">
+                            <label for="psc-4" class="col position-relative">
                                 <img src="img/remote-thumb.png" alt="" class="img-fluid">
                                 <div class="text-center d-none d-md-block mt-2">
                                     Telecomando Media
                                 </div>
                                 <div class="barra-inferiore"></div>
-                            </div>
+                            </label>
 
-                            <div class="col position-relative">
+                            <label for="psc-5" class="col position-relative">
                                 <img src="img/camera-thumb.jpg" alt="" class="img-fluid">
                                 <div class="text-center d-none d-md-block mt-2">
                                     Telecamera HD
                                 </div>
                                 <div class="barra-inferiore"></div>
-                            </div>
+                            </label>
 
                         </div>
 
